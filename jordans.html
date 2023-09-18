@@ -1,0 +1,116 @@
+<img src="" alt=""><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nike-Jordans1</title>
+    <style>
+        *{
+            margin:0%;
+            padding:0%;
+        }
+        #body{
+            background-color:#0062be;                                 
+        }
+        #navigation{
+            height:6vh;
+            width:98vw;           
+            display:flex;
+            align-items:center;
+        }
+        #logo{
+            height:5vh;
+            width:4w;
+            margin:2px;
+        }
+        #heading{
+            font-weight:bold;
+            font-size:3vh;
+        }
+        #menu{
+            width:100vw;
+            display:flex;
+            justify-content:right;
+        }
+        ul{
+            display:flex;
+            font-weight:bold;
+            margin:5%;
+        }
+        li{
+            list-style:none;
+            font-size:2.5vw;
+            margin:6%;
+        }
+        #li1{
+            color:silver;           
+        }
+        #li1:active{
+            color:silver;
+            transform:scale(1.2);
+        }
+        #li2:active{
+            color:silver;
+            transform:scale(1.2);
+        }
+        #maincontainer{
+            height:45vh;
+            width:100vw;                   
+            display:flex;
+            justify-content:center;            
+        }
+        #mainimg{
+            height:42vh;
+            width:63vw;
+            transform:rotate(-30deg);
+            filter:drop-shadow(1rem 1.2rem 2rem black);            
+        }
+        #selectcontainer{
+            height:20vh;
+            width:98vw;           
+            display:flex;
+            justify-content:center;
+            align-items:center;                     
+        }
+        .items{
+            margin:5%;
+            height:14vh;
+            width:21vw;
+        }
+        .items:active{           
+            position:relative;
+            bottom:10px;            
+            transform:scale(10%);            
+        }
+    </style>
+</head>
+<body id="body">
+    <nav id="navigation">
+        <img src="content://com.android.providers.downloads.documents/document/msf%3A1000065723" alt="logo" id="logo">
+        <h1 id="heading">Jordan's</h1>
+        <div id="menu">
+            <ul>
+                <li id="li1">Home</li>
+                <li id="li2">About</li>
+            </ul>
+        </div>
+    </nav>
+    <div id="maincontainer">
+        <img src="content://com.android.providers.downloads.documents/document/msf%3A1000065424" alt="mainimage" id="mainimg">
+    </div>
+    <div id="selectcontainer">
+        <img src="content://com.android.providers.downloads.documents/document/msf%3A1000065424" alt="item1" class="items" id="item1" onclick="changing('#0062be'); changing('content://com.android.providers.downloads.documents/document/msf%3A1000065424');">
+        <img src="content://com.android.providers.downloads.documents/document/msf%3A1000065425" alt="item2" class="items" id="item2" onclick="changing('#10bc39f9'); changing('content://com.android.providers.downloads.documents/document/msf%3A1000065425');">
+        <img src="content://com.android.providers.downloads.documents/document/msf%3A1000065423" alt="item3" class="items" id="item3" onclick="changing('#e60c2c'); changing('content://com.android.providers.downloads.documents/document/msf%3A1000065423');">
+    </div>
+    <div id="maincontainer2">
+        <img src="" alt="mainimage" id="mainimg2">
+    </div>
+    <script>
+        function changing(option){
+            let content = document.querySelector("#body");
+            body.style.background = option;
+            document.querySelector('#mainimg').src = option;
+        }
+    </script>
+</body>
+</html>
